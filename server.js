@@ -34,6 +34,10 @@ const addFileToIPFS = async (file) => {
     }
 };
 
+app.get('/',(req,res) => {
+    res.send("Backend working")
+})
+
 const getFile = async (hash) => {
     try {
         const chunks = [];
